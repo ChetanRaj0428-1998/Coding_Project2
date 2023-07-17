@@ -53,6 +53,9 @@ ionic cordova run browser
 
 <pre>
 ⚠️ Note that:
-- if you the above steps do not work or does not run for any reason run<strong>ionic serve -l</strong>
+- If `ionic cordova run browser` does not run the project 
+for any reason run <strong>`ionic serve -l`</strong>
 </pre>
-
+```
+ionic serve -l
+```
