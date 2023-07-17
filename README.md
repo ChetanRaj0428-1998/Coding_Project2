@@ -16,27 +16,23 @@ phone, bio and their profile picture.
 
 <h3>:eye_speech_bubble: Live demo </h3>
 
-Check live demonstration <a  href="https://chetanraj0428-1998.github.io/Portfolio_FullStack/"  target="_blank"><strong>👉👉here👈👈</strong></a>
+<!--
+Check live demonstration[Important: Native Camera Plugin will not work so follow below steps] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
+-->
 
-<img width="100%" src="long.png" alt="react frontend dev portfolio preview"/>
+
+
 
 <h3>:books: Getting started</h3>
 
 1. Clone or fork project.
+```
+git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
+```
 2. Install required dependencies with `npm install`.
 3. Remove `homepage` entirely from `package.json` or set it to single dot. 
 
-```
-// package.json
-{
-  "name": "react-dev-portfolio",
-  "homepage": "https://chetanraj0428-1998.github.io/Portfolio_FullSttack/",   <-- remove/edit this
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-  ...
-}
-```
+
 
 4. `npm start` project and customize it.
 5. Deploy on github-pages using `npm run deploy` command.
