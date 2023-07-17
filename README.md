@@ -18,7 +18,7 @@ phone, bio and their profile picture.
 
 <h3>:books: Getting started</h3>
 
-1. Make sure latest/stable versions of <a href="https://nodejs.org/en"><img src="https://img.shields.io/badge/-Node%20JS-green"  alt="Node JS"/> &nbsp;</a>,<a href="https://angular.io/cli"><img src="https://img.shields.io/badge/-Angular-red"  alt="Angular"/> &nbsp;</a>  and <a href="https://ionicframework.com/"><img src="https://img.shields.io/badge/-Ionic-blue"  alt="Ionic"/></a>  are installed on your MacOS 🖥️. (use `--force` if required)
+1. Make sure latest/stable versions of <a href="https://nodejs.org/en"><img src="https://img.shields.io/badge/-Node%20JS-green"  alt="Node JS"/> &nbsp;</a> , <a href="https://angular.io/cli"><img src="https://img.shields.io/badge/-Angular-red"  alt="Angular"/> &nbsp;</a>  and  <a href="https://ionicframework.com/"><img src="https://img.shields.io/badge/-Ionic-blue"  alt="Ionic"/></a>  are installed on your MacOS 🖥️. (use `--force` if required)
 
 2. Clone the project.
 ```
