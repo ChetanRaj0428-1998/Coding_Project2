@@ -24,28 +24,34 @@ phone, bio and their profile picture.
 ```
 git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
-3. Install required dependencies with `npm install` (use `npm install --force` if required or `sudo npm install --force`).
+
+3. Navigate to the `Coding_Project2` directory.
+```
+cd Coding_Project2
+```
+
+4. Install required dependencies with `npm install` (use `npm install --force` if required or `sudo npm install --force`).
 ```
 npm install
 ```
 
-4. Install the "native-run" package globally using `npm i -g native-run` (use `sudo npm i -g native-run` if required). 
+5. Install the "native-run" package globally using `npm i -g native-run` (use `sudo npm i -g native-run` if required). 
 ```
 npm i -g native-run
 ```
 
-5. Install the "cordova" package globally using `npm i -g cordova` (use `sudo npm i -g cordova` if required). 
+6. Install the "cordova" package globally using `npm i -g cordova` (use `sudo npm i -g cordova` if required). 
 ```
 npm i -g cordova
 ```
 
-6. Run the project in the browser using `ionic cordova run browser` command. 
+7. Run the project in the browser using `ionic cordova run browser` command. 
 ```
 ionic cordova run browser
 ```
-7. The project should now run on the browser.
+8. The project should now run on the browser.
 
-8. Alternatively, you can run the project using `ionic serve -l`.
+9. Alternatively, you can run the project using `ionic serve -l`.
 ```
 ionic serve -l
 ```
