@@ -11,7 +11,7 @@ phone, bio and their profile picture.
 
 <strong>:crown: Features⭐</strong>
 
-<img src="https://img.shields.io/badge/-Responsiveness-blue" alt="Responsive Design"/> &nbsp; <img src="https://img.shields.io/badge/-mobile friendly-blue" alt="Camera Plugin"/> &nbsp; <img src="https://img.shields.io/badge/-light/dark mode-blue" alt="Crop your Image"/> &nbsp; <img src="https://img.shields.io/badge/-json fetched data-blue" alt="json fetched data"/> &nbsp; <img src="https://img.shields.io/badge/-minimalistic-blue" alt="Form Validation"/> &nbsp; 
+<img src="https://img.shields.io/badge/-Responsiveness-blue" alt="Responsive Design"/> &nbsp; <img src="https://img.shields.io/badge/-Camera%20Plugin-red" alt="Camera Plugin"/> &nbsp; <img src="https://img.shields.io/badge/-Crop%20Image-green" alt="Crop your Image"/> &nbsp; <img src="https://img.shields.io/badge/-Form%20Validation-orange" alt="Form Validation"/> &nbsp; 
 <br/>
 
 <h3>:eye_speech_bubble: Live demo </h3>
