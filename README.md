@@ -18,7 +18,7 @@ phone, bio and their profile picture.
 
 <h3>:books: Getting started</h3>
 
-1. Make sure latest/stable versions of Node, Angular and Ionic are installed on your MacOS 🖥️.
+1. Make sure latest/stable versions of <img src="https://img.shields.io/badge/-Node%20JS-green" alt="Responsive Design"/> &nbsp;, <img src="https://img.shields.io/badge/-Angular-red" alt="Responsive Design"/> &nbsp; and <img src="https://img.shields.io/badge/-Ionic-blue" alt="Responsive Design"/> are installed on your MacOS 🖥️.
 
 2. Clone the project.
 ```
