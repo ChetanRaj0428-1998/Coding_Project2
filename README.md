@@ -1,8 +1,8 @@
-<img width="75%" align="middle" src="test.png" alt="portfolio template mockup"  style="background-color: transparent;"/> <br/>
-<img height="350px" align="right" src="vid.gif" alt="portfolio mobile demo gif"/>
+<img width="75%" align="middle" src="logo.png" alt="logo"  style="background-color: transparent;"/> <br/>
+<img height="350px" align="right" src="vid.gif" alt=" mobile demo gif"/>
 
 <img align="left" src="https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/react.svg" height="50" alt="react icon"/>
-<h2>My Portfolio Using React </h2>
+<h2>Coding Project 2</h2>
 
 <pre>
 ⭐ A mobile application developed using Ionic that appears to have the 
