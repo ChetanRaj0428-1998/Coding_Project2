@@ -24,31 +24,33 @@ phone, bio and their profile picture.
 ```
 git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
-3. Install required dependencies with `npm install` (use `--force` if required).
+3. Install required dependencies with `npm install` (use `npm install --force` if required or `sudo npm install --force`).
 ```
 npm install
 ```
 
-4. Install the "native-run" package globally using `npm i -g native-run`. 
+4. Install the "native-run" package globally using `npm i -g native-run` (use `sudo npm i -g native-run` if required). 
 ```
 npm i -g native-run
 ```
 
-5. Install the "cordova" package globally using `npm i -g cordova`. 
+5. Install the "cordova" package globally using `npm i -g cordova` (use `sudo npm i -g cordova` if required). 
 ```
 npm i -g cordova
 ```
 
-6. Run the project in the browser using `ionic cordova run browser` command.
+6. Run the project in the browser using `ionic cordova run browser` command. 
 ```
 ionic cordova run browser
 ```
-7. The project should now run on the browser
+7. The project should now run on the browser.
+
+8. Alternatively, you can run the project using `ionic serve -l`.
 
 
 <pre>
 ⚠️ Note that:
-- If  you see the error `Cannot GET /tabs/tab1` on your page , remove <strong>`/tabs/tab1`</strong> from
+- If  you see the error `Cannot GET /tabs/tab1` on your page when refreshed, remove <strong>`/tabs/tab1`</strong> from
 the <strong>`localhost:8000/tabs/tab1`</strong> URL and hit enter.
 
 - If `ionic cordova run browser` does not run the project 
