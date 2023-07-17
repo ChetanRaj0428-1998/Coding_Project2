@@ -59,4 +59,6 @@ the native camera plugin would not work.
 ionic serve -l
 ```
 
-Check live demonstration[⚠️Important: Native Camera Plugin will not work on browser use `ionic cordova run browser`] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
+Check live demonstration
+[⚠️Important: Native Camera Plugin will not work on browser use `ionic cordova run browser`]
+ <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉Click Here👈👈</strong></a>
