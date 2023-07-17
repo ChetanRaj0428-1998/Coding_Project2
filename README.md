@@ -21,7 +21,8 @@ phone, bio and their profile picture.
 1. Make sure latest/stable versions of Node, Angular and Ionic are installed on your MacOS 🖥️.
 
 2. Clone the project.
-```git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
+```
+git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
 3. Install required dependencies with `npm install` (use `--force` if required).
 ```
