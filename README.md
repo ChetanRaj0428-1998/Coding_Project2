@@ -61,4 +61,4 @@ ionic serve -l
 
 Check live demonstration
 [⚠️Important: Use `ionic cordova run browser` to use Native Camera Plugin]
- <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉Click Here👈👈</strong></a>
+ <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><br/><strong>👉👉Click Here👈👈</strong></a>
