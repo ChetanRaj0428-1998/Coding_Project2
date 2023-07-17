@@ -16,46 +16,47 @@ phone, bio and their profile picture.
 
 
 
-<!--
-<h3>:eye_speech_bubble: Live demo </h3>
-
-Check live demonstration[⚠️Important: Native Camera Plugin will not work so follow below steps] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
--->
-
-
-
-
 <h3>:books: Getting started</h3>
 
-1. Clone or fork project.
+1. Make sure Node, Angular and Ionic are installed on your MacOS.
+
+2. Clone or fork project.
 ```
 git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
-2. Install required dependencies with `npm install` (use --force if required).
+3. Install required dependencies with `npm install` (use --force if required).
 ```
 npm install
 ```
 
-3. Install the "native-run" package globally using `npm i -g native-run`. 
+4. Install the "native-run" package globally using `npm i -g native-run`. 
 ```
 npm i -g native-run
 ```
 
-4. Install the "cordova" package globally using `npm i -g cordova`. 
+5. Install the "cordova" package globally using `npm i -g cordova`. 
 ```
 npm i -g cordova
 ```
 
-5. Run the project in the browser using `ionic cordova run browser` command.
+6. Run the project in the browser using `ionic cordova run browser` command.
 ```
 ionic cordova run browser
 ```
+7. The project should now run on the browser
+
 
 <pre>
 ⚠️ Note that:
+- If  you see this `Cannot GET /tabs/tab1`, remove <strong>`/tabs/tab1`</strong> from
+the <strong>`localhost:8000/tabs/tab1`</strong> and hit enter.
+
 - If `ionic cordova run browser` does not run the project 
-for any reason run <strong>`ionic serve -l`</strong>
+for any reason run <strong>`ionic serve -l`</strong> but 
+the native camera plugin would not work.
 </pre>
 ```
 ionic serve -l
 ```
+
+Check live demonstration[⚠️Important: Native Camera Plugin will not work on browser use `ionic cordova run browser`] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
