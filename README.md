@@ -20,7 +20,7 @@ phone, bio and their profile picture.
 
 1. Make sure Node, Angular and Ionic are installed on your MacOS.
 
-2. Clone or fork project.
+2. Clone the project.
 ```
 git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
