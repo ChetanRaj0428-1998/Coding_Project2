@@ -14,10 +14,12 @@ phone, bio and their profile picture.
 <img src="https://img.shields.io/badge/-Responsiveness-blue" alt="Responsive Design"/> &nbsp; <img src="https://img.shields.io/badge/-Camera%20Plugin-blue" alt="Camera Plugin"/> &nbsp; <img src="https://img.shields.io/badge/-Crop%20Image-blue" alt="Crop your Image"/> &nbsp; <img src="https://img.shields.io/badge/-Form%20Validation-blue" alt="Form Validation"/> &nbsp; 
 <br/>
 
-<h3>:eye_speech_bubble: Live demo </h3>
+
 
 <!--
-Check live demonstration[Important: Native Camera Plugin will not work so follow below steps] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
+<h3>:eye_speech_bubble: Live demo </h3>
+
+Check live demonstration[⚠️Important: Native Camera Plugin will not work so follow below steps] <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉here👈👈</strong></a>
 -->
 
 
@@ -29,29 +31,28 @@ Check live demonstration[Important: Native Camera Plugin will not work so follow
 ```
 git clone 'http://github.com/ChetanRaj0428-1998/Coding_Project2.git'
 ```
-2. Install required dependencies with `npm install`.
-3. Remove `homepage` entirely from `package.json` or set it to single dot. 
+2. Install required dependencies with `npm install` (use --force if required).
+```
+npm install
+```
 
+3. Install the "native-run" package globally using `npm i -g native-run`. 
+```
+npm i -g native-run
+```
 
+4. Install the "cordova" package globally using `npm i -g cordova`. 
+```
+npm i -g cordova
+```
 
-4. `npm start` project and customize it.
-5. Deploy on github-pages using `npm run deploy` command.
+5. Run the project in the browser using `ionic cordova run browser` command.
+```
+ionic cordova run browser
+```
 
 <pre>
 ⚠️ Note that:
-- if you want to have portfolio on different repository than `{username}.github.io`, 
-set `homepage` in `package.json` to `https://{username}.github.io/{repository-name}/` 
-before deploying portfolio.
-- if you want to run it locally with <strong>npm run start</strong>, make sure that you have edited 
-homepage property or json data won't load.
+- if you the above steps do not work or does not run for any reason run<strong>ionic serve -l</strong>
 </pre>
 
-<h3>:star: Inspirations</h3>
-
-<a href="https://github.com/stephane-monnot/react-vertical-timeline">React Vertical Timeline</a> <br/>
-<a href="https://github.com/rcaferati/react-awesome-slider">React Awesome Slider</a> <br/>
-<a href="https://github.com/markusenglund/react-switch">React Switch</a> <br/>
-<a href="https://github.com/catalinmiron/react-typical">React Typical</a> <br/>
-<a href="https://iconify.design/icon-sets/?query=angular">Iconify Design</a> <br/>
-<a href="https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#">Polaroid effect</a> <br/>
-<a href="https://tholman.com/github-corners/">GitHub Ref Corner</a>
