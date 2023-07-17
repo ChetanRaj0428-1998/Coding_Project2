@@ -18,7 +18,7 @@ phone, bio and their profile picture.
 
 <h3>:books: Getting started</h3>
 
-1. Make sure latest/stable versions of Node, Angular and Ionic are installed on your MacOS.
+1. Make sure latest/stable versions of Node, Angular and Ionic are installed on your MacOS 🖥️.
 
 2. Clone the project.
 ```
