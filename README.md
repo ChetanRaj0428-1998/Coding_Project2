@@ -48,7 +48,7 @@ ionic cordova run browser
 
 <pre>
 ⚠️ Note that:
-- If  you see this `Cannot GET /tabs/tab1`, remove <strong>`/tabs/tab1`</strong> from
+- If  you see the error `Cannot GET /tabs/tab1` on your page , remove <strong>`/tabs/tab1`</strong> from
 the <strong>`localhost:8000/tabs/tab1`</strong> URL and hit enter.
 
 - If `ionic cordova run browser` does not run the project 
