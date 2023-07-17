@@ -68,6 +68,7 @@ export class Tab1Page {
     console.log("asd");
   }
   cancel2() {
+    this.myImage=this.myProfilePic;
     this.cropModal.dismiss(); // Dismiss the names-modal
 
     console.log("asd");
