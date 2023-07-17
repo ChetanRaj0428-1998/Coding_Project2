@@ -60,5 +60,5 @@ ionic serve -l
 ```
 
 Check live demonstration
-[⚠️Important: Native Camera Plugin will not work on browser use `ionic cordova run browser` to test Native Camera Plugin]
+[⚠️Important: Use `ionic cordova run browser` to use Native Camera Plugin]
  <a  href="https://peppy-faun-e59dfe.netlify.app/"  target="_blank"><strong>👉👉Click Here👈👈</strong></a>
