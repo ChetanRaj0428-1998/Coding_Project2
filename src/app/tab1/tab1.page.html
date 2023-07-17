@@ -1,17 +1,307 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title >
+  
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container ion-item"   >
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <h2 class="text">Edit Profile</h2>
+    <ion-avatar id="names-modal" expand="block" (click)="setModalFlag(5)" >
+
+      <img alt="image not available" [src]="myProfilePic" />
+
+      <ion-fab >
+        <ion-fab-button >
+          <ion-icon name="pencil" ></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      
+    </ion-avatar>
+  </div>
+
+  <ion-grid id="name-modal" expand="block">
+    <ion-row>
+      <ion-col>
+        <!-- Content for the first row -->
+        <ion-item lines="full" button="true" (click)="setModalFlag(1)" detail="false">
+          <ion-label>
+            <h2 class="grey">Name</h2>
+            <h2 class="fstyle">{{ myFName }} {{ myLName }}</h2>
+          </ion-label>
+          <ion-icon class="grey"  name="chevron-forward-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!-- Content for the second row -->
+        <ion-item lines="full" button="true" (click)="setModalFlag(2)" detail="false">
+          <ion-label>
+            <h2 class="grey">Phone</h2>
+            <h2 class="fstyle">{{myPNumber}}</h2>
+          </ion-label>
+          <ion-icon  class="grey" name="chevron-forward-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!-- Content for the third row -->
+        <ion-item lines="full" button="true" (click)="setModalFlag(3)" detail="false">
+          <ion-label>
+            <h2 class="grey">Email</h2>
+            <h2 class="fstyle">{{myEmail}}</h2>
+          </ion-label>
+          <ion-icon class="grey"  name="chevron-forward-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!-- Content for the fourth row -->
+        <ion-item lines="full" button="true" class="full-lines" (click)="setModalFlag(4)" detail="false">
+          <ion-label>
+            <h2 class="grey">Tell us about yourself</h2>
+            <h2 class="fstyle">{{myBio}}</h2>
+          </ion-label>
+          <ion-icon class="grey"  name="chevron-forward-outline" slot="end"></ion-icon>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <!--Modal for Input/ Updates-->
+
+  <ion-modal trigger="name-modal" (willDismiss)="onWillDismiss($event)">
+    
+    <ng-template >
+      <ion-header >
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-icon class="ion-activatable ripple-parent"  name="arrow-back" (click)="cancel()" slot="end" style="font-size:xx-large" ></ion-icon> 
+
+          </ion-buttons>
+            <ion-buttons slot="end">
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding" >
+        <ion-grid >
+          <!--Name-->
+          <ion-row *ngIf="modelFlag===1">
+            <ion-col>
+              <h1>
+                What's your name?
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===1">
+            <ion-col >
+                <ion-input label ="First Name" type="text"  [(ngModel)]="myFName" fill="outline" labelPlacement="stacked"></ion-input>
+                
+
+            </ion-col>
+            <ion-col>
+                <ion-input label ="Last Name" type="text"  [(ngModel)]="myLName" fill="outline" labelPlacement="stacked"></ion-input>
+              
+            </ion-col>
+          </ion-row>
+
+          <!--Phone-->
+          <ion-row *ngIf="modelFlag===2">
+            <ion-col>
+              <h1>
+                What's your phone number?
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===2">
+            <ion-col >
+                <ion-input label ="Your phone number" type="tel"  [(ngModel)]="myPNumber" fill="outline"  [maskito]="phoneMask"
+                [maskitoElement]="maskPredicate" labelPlacement="stacked"></ion-input>                
+            </ion-col>
+          </ion-row>
+          
+          <!--Email-->
+          <ion-row *ngIf="modelFlag===3">
+            <ion-col>
+              <h1>
+                What's your email?
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===3">
+            <ion-col >
+                <ion-input label ="Your email address" type="email"  [(ngModel)]="myEmail" fill="outline" labelPlacement="stacked"></ion-input>                
+            </ion-col>
+          </ion-row>
+
+           <!--Bio-->
+           <ion-row *ngIf="modelFlag===4">
+            <ion-col>
+              <h1>
+                Tell us about yourself.
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===4">
+            <ion-col >
+                <ion-textarea 
+                placeholder="Write a little about yourself. What you do? What are your interests?"  
+                [(ngModel)]="myBio" 
+                [autoGrow]="true"
+                fill="outline" 
+                labelPlacement="stacked"></ion-textarea>                
+            </ion-col>
+          </ion-row>
+
+          <!--Update Button-->
+          <ion-row>
+            <ion-col>
+              <ion-button (click)="confirm()" expand="full" color="dark">Update</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        
+      </ion-content>
+    </ng-template>
+
+
+  </ion-modal>
+
+
+  <ion-modal #namesModal trigger="names-modal" (willDismiss)="onWillDismiss($event)" >
+    
+    <ng-template >
+      <ion-header >
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-icon class="ion-activatable ripple-parent"  name="arrow-back" (click)="cancel()" slot="end" style="font-size:xx-large" ></ion-icon> 
+
+          </ion-buttons>
+            <ion-buttons slot="end">
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding" >
+        <ion-grid >
+
+          <!--Phone-->
+          <ion-row *ngIf="modelFlag===5">
+            <ion-col>
+              <h1>
+                Upload a photo of yourself:
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===5">
+            <ion-col  class="full-width-height">
+              <img  id="present-alert"  alt="image not available" [src]="myImage" class="full-width-height" />
+              <ion-alert
+              trigger="present-alert"
+              header="Upload from :"
+              [buttons]="alertButtons"
+              (didDismiss)="setResult($event)"
+            ></ion-alert>
+
+            <ion-popover [keepContentsMounted]="true" [isOpen]="true" trigger="open-popover">
+              <ng-template>
+                <ion-content class="ion-padding">Click on the image to edit</ion-content>
+              </ng-template>
+            </ion-popover>
+           <!--
+            
+            <img    alt="image not available" [src]="myImage" />
+
+           -->
+            </ion-col>
+          </ion-row>
+          
+        
+          <!--Update Button-->
+          <ion-row>
+            <ion-col>
+              <ion-button (click)="confirm()" expand="full" color="dark">Update</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        
+      </ion-content>
+    </ng-template>
+
+
+  </ion-modal>
+
+  
+<ion-modal #cropModal trigger="crop-modal" (willDismiss)="onWillDismiss($event)">
+    
+    <ng-template >
+      <ion-header >
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-icon class="ion-activatable ripple-parent"  name="arrow-back" (click)="cancel2()" slot="end" style="font-size:xx-large" ></ion-icon> 
+
+          </ion-buttons>
+            <ion-buttons slot="end">
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding" >
+        <ion-grid >
+
+          <ion-row *ngIf="modelFlag===5">
+            <ion-col>
+              <h1>
+                Crop your photo:
+              </h1>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="modelFlag===5">
+            <ion-col >
+                <image-cropper 
+                [imageBase64]="myImage" 
+                (imageCropped)="imageCropped($event)"
+                [roundCropper]="true"
+                [canvasRotation]="canvasRotate"
+
+                ></image-cropper>
+
+                
+                <!--
+                <img [src]="croppedImage" alt="Cropped Image">
+                -->
+            </ion-col>
+          </ion-row>
+          
+         
+          <ion-row>
+            <ion-col>
+              
+              <ion-button color="medium" expand="full"   (click)="rotateRight()">Rotate Right</ion-button>
+                  </ion-col>
+                
+                  <ion-col>
+                    <ion-button  color="light" expand="full"   (click)="rotateLeft()">Rotate Left </ion-button>
+                  </ion-col>
+            <ion-col>
+              <ion-button (click)="crop()"  expand="full" color="dark">Crop<ion-icon name="crop"></ion-icon></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+        
+      </ion-content>
+    </ng-template>
+
+  </ion-modal>
+    
+  
+  
 </ion-content>
