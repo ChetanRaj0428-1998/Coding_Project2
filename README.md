@@ -46,6 +46,10 @@ ionic cordova run browser
 7. The project should now run on the browser.
 
 8. Alternatively, you can run the project using `ionic serve -l`.
+```
+ionic serve -l
+```
+
 
 
 <pre>
